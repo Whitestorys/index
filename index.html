@@ -35,7 +35,8 @@
 <!--                     <button id="kaygb-blog" class="btn btn-primary col-lg-4">BLOG</button> -->
                     <a href="http://cylove.cc" id="kaygb-blog" target="_blank" class="btn btn-primary col-lg-4">当前论坛域名</a>
                     <a href="https://www.ciyuanlove.com" target="_blank" class="btn btn-secondary col-lg-4">永久跳转地址</a>
-                    <a href="https://shang.qq.com/wpa/qunwpa?idkey=bc3305ce8874d64f291b9f003c527b052726cb9a93a1ab5d0f3b5defdcdd01ab" target="_blank" id="kaygb-mail" class="btn btn-success col-lg-4">加入聊天群</a>
+                    <a href="//shang.qq.com/wpa/qunwpa?idkey=bc3305ce8874d64f291b9f003c527b052726cb9a93a1ab5d0f3b5defdcdd01ab" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">加入聊天群</a>
+                    <button id="kaygb-mail" class="btn btn-success col-lg-4">加入聊天群</button>
                 </div>
 
 
@@ -56,9 +57,6 @@
     <div class="aplayer" data-autoplay="true" data-fixed="true" data-id="5053139566" data-list-folded="true"
      data-lrc-type="1" data-order="random" data-server="netease" data-type="playlist" data-volume="0.5"></div>
     <!-- aplayer -->
-
-
-
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
@@ -67,4 +65,18 @@
     <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Whitestorys/Cylove-index@master/new_version/static/layer/layer.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Whitestorys/Cylove-index@master/new_version/static/js/v3.js"></script>
+    <script>
+        //弹出一个页面层
+        $('#kaygb-mail').on('click', function() {
+            layer.open({
+                type: 2,
+                title: '加入聊天2群',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['80%', '100%'],
+                content: '//shang.qq.com/wpa/qunwpa?idkey=bc3305ce8874d64f291b9f003c527b052726cb9a93a1ab5d0f3b5defdcdd01ab'
+            });
+        });
+    </script>
 </html>
